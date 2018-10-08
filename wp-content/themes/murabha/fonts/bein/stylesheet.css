@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'beIN';
+    src: url('./beINBlack.woff2') format('woff2'),
+        url('./beINBlack.woff') format('woff'),
+        url('./beINBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'beIN Normal';
+    src: url('./beINNormal.woff2') format('woff2'),
+        url('./beINNormal.woff') format('woff'),
+        url('./beINNormal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

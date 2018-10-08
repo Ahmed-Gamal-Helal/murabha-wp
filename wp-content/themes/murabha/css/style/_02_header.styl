@@ -1,0 +1,305 @@
+.first-navbar
+    background-color white
+    min-height 50px
+    .left-side-nav
+        @media (max-width 567px)
+            float: none
+    .auto-margin
+        @media (max-width 567px)
+            text-align: center !important
+    ul
+        li
+            display inline-block
+    .language
+        img
+            height 13px
+            width 19px
+            margin-left .25em
+
+    ul.dropdown-menu 
+        li
+            a 
+                color black
+                line-height 25px
+.socials
+    text-align left
+    a
+        color white
+        font-family Coco-Lt
+        line-height 50px
+        i
+            font-size 16px
+            padding 4px 5px
+            background-color #2a5a8b
+            border-radius 50%
+    a.smart-one
+        color #2a5a8b
+        font 14px beIN Normal
+        i.flaticon-smartphone-call
+            background-color transparent
+            font-size: 20px;
+            padding: 0 0 0 10px;
+.socials-2
+    text-align center
+    .smart-one
+        color #b8c6d5 !important 
+    ul
+        li
+            display inline-block
+            a
+                i 
+                    background-color #b8c6d5
+                    
+li.lang
+    line-height 2 !important
+nav.navbar
+    padding 0
+    ul.navbar-nav
+        li
+            a
+                font-family 'Coco-Lt'
+                color black !important
+.language
+    line-height 52px
+    i 
+        color secondcolor
+        font-size 15px 
+    select 
+        direction ltr !important
+        outline none 
+        border none
+        font-size 13px
+        font-family beIN Normal
+        margin-left .5em
+        background-color transparent
+        color secondcolor
+.lang-2
+    i, select
+        color #b8c6d5 
+.navbar-light 
+    .navbar-toggler
+        @media (max-width 991px)
+            position absolute
+            top -100px
+            z-index 9999
+            left 1em
+            color white
+        @media (max-width 767px)
+            top -154px
+.logo-area
+    text-align left
+    img 
+        padding 6px 0
+        height 100px
+ul.navbar-nav
+    position relative
+    width 100%
+    li.send-sms
+        position absolute
+        left 0
+        a
+            border 1px dashed #000
+            padding .5em 2em !important
+            margin-top 8px
+            border-radius 4px
+.search-area
+    position absolute
+    top 80px
+    right 0
+    left 0
+    z-index 99
+    @media(max-width: 767px)
+        top 120px
+    .contact-area
+        .address, .phones
+            display inline-block
+            i, .spans
+                display inline-block
+            i
+                color secondcolor 
+                border 1px dashed secondcolor
+                padding 8px 11px
+                border-radius 50%
+            .spans
+                span 
+                    color white
+                    // float left
+                    font 14px Coco-Bd
+.pages-part
+    background-color maincolor
+    z-index: 99;
+    .contact-area
+        .address, .phones
+            display inline-block
+            i, .spans
+                display inline-block
+            i
+                color secondcolor 
+                border 1px dashed secondcolor
+                padding 8px 11px
+                border-radius 50%
+            .spans
+                span 
+                    color white
+                    font 14px Coco-Bd
+.base-bg
+    background-image url(../images/002.png)
+    background-repeat no-repeat
+    width 100%
+    background-size cover
+    padding 6em 0
+    position relative
+    &:before
+        content ''
+        position absolute
+        top 0
+        right 0
+        bottom 0
+        left 0
+        background-color rgba(0, 0, 0, 0.84)
+        opacity 0.9
+    a, h2
+        position relative
+    h2
+        font 50px Coco-Bd
+        color secondcolor
+    a
+        font 18px Coco-Lt
+        color white
+
+a.exit-button 
+    position absolute
+    left 10px
+    top 10px
+    font-size 28px
+    color maincolor
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 0;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #fff;
+  text-align center
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 360px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  margin-top 25px
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+a#menu-toggle
+    outline none
+    // line-height 57px
+    z-index 999
+    &:focus
+        box-shadow none
+    i.flaticon-menu
+        color: #cad9e9;
+        font-size: 30px;
+
+/* Sidebar Styles */
+
+.sidebar-nav 
+  margin-top 4em
+  padding 0
+  list-style none
+  border-bottom 1px solid #b8c6d5
+  padding-bottom 1.5em
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a 
+    display block
+    text-decoration none
+    color #b8c6d5
+    font 18px beIN Normal
+    line-height 2.5
+    transition .2s all ease-in-out
+    &:hover
+        text-decoration none
+        color maincolor
+        background rgba(255, 255, 255, 0.2)
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+@media(min-width:768px) {
+  #wrapper {
+    padding-left: 0;
+  }
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+  #sidebar-wrapper {
+    width: 0;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 360px;
+  }
+  #page-content-wrapper {
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
+@media(max-width:768px)
+    #wrapper.toggled #sidebar-wrapper 
+        width 250px
+.overlay
+    position fixed
+    top 0
+    right 0
+    bottom 0
+    left 0
+    background-color rgba(0,0,0,.6)
+    z-index 998
+    display none
